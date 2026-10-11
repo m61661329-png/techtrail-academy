@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="A friendly, visual technology academy for learning smartphones, PCs and cars from beginner to advanced.">
+  <title>TechTrail Academy — Learn the tech around you</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#appContent">Skip to main content</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#home" aria-label="TechTrail home"><span class="brand-mark">✦</span><span>techtrail<span class="brand-sub">ACADEMY</span></span></a>
+      <div class="nav-label">YOUR LEARNING SPACE</div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-view="home"><span>◫</span> Overview</button>
+        <button class="nav-item" data-view="courses"><span>▤</span> All courses</button>
+        <button class="nav-item" data-view="progress"><span>◴</span> My progress</button>
+        <button class="nav-item" data-view="glossary"><span>⌘</span> Tech dictionary</button>
+        <button class="nav-item" data-view="resources"><span>▷</span> Video library</button>
+      </nav>
+      <div class="sidebar-divider"></div>
+      <div class="nav-label">YOUR COURSES</div>
+      <div id="sidebarCourses" class="side-courses"></div>
+      <div class="sidebar-bottom">
+        <div class="streak-box"><span class="streak-icon">✷</span><div><b id="streakCount">0 day streak</b><small>Little progress adds up.</small></div></div>
+        <button id="exportBtn" class="small-link">↗ Export my progress</button>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="menuBtn" aria-label="Toggle menu">☰</button>
+        <div class="crumbs"><span>Learning space</span><span class="crumb-slash">/</span><b id="crumbCurrent">Overview</b></div>
+        <div class="top-actions"><label class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Search lessons, topics…" aria-label="Search lessons and topics"><kbd>⌘ K</kbd></label><button class="icon-btn" id="themeBtn" aria-label="Toggle appearance" title="Toggle appearance">☼</button><div class="avatar" title="Your learning profile">T</div></div>
+      </header>
+      <div id="appContent" class="content-wrap" tabindex="-1"></div>
+      <footer class="site-footer"><span>Built for curious minds, from first click to expert thinking.</span><span>Learn at your pace · Made for India 🇮🇳</span></footer>
+    </main>
+  </div>
+  <input id="importProgressInput" type="file" accept="application/json,.json" hidden aria-label="Choose a TechTrail progress backup">
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="curriculum.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
