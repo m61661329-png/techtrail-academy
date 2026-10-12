@@ -1,13 +1,13 @@
-TECHTRAIL ACADEMY — QUICK START
+LEARN WITH FAIQ — QUICK START
 ================================
 
-This is a responsive, client-side learning website with three complete paths:
+This is a responsive, client-side learning website created by Faiq, with three complete paths:
 • Phone Mastery — 12 lessons
 • PC & Hardware Lab — 12 lessons
 • Car Knowledge Garage — 12 lessons
 
 WHAT'S INCLUDED
-- 36 sequenced lessons with friendly explanations, analogies, diagrams, examples and misconception checks
+- 36 sequenced lessons with friendly explanations, analogies, diagrams, examples, misconception checks and expandable practice hints
 - Three-question concept tests in every lesson, instant answer explanations, a 2/3 pass threshold and retries
 - Course outline, lesson navigation, search, a 40-term dictionary and a progress dashboard
 - Personal lesson notes, saved progress, streak/activity tracking and JSON export
